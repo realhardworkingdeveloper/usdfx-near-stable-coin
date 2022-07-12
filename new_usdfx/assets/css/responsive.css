@@ -1,0 +1,791 @@
+
+@media screen and (max-width: 1199px){
+.team-card{
+	max-width: 260px;
+
+}
+
+.takenomics-section .section-title h2{
+	font-size: 40px;
+}
+
+
+/*
+==========================================
+	HEADER SECTION START
+==========================================
+*/
+.header-section{
+	margin-bottom: 10px;
+	padding: 20px 0;
+	padding-left: 8%;
+}
+
+.header-section .header-content h1{
+	font-size: 45px;
+	line-height: 1.5;
+
+}
+.header-section .header-content p{
+	font-size: 24px;
+}
+
+
+/*
+==========================================
+	HEADER SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	MULTI CHAIN START
+==========================================
+*/
+.multi-chain{
+	margin-bottom: 0px;
+
+}
+.multi-chain .chain-card2{
+	padding: 25px 10px;
+}
+
+
+.multi-chain .chain-card2 .chain-cd2 a{
+	padding: 3px 4px;
+}
+
+/*
+==========================================
+	MULTI CHAIN END
+==========================================
+*/
+
+
+}
+
+@media screen and (max-width: 991px){
+.team-card{
+	max-width: 295px;
+
+}
+.funds .take-detail{
+}
+
+/*
+==========================================
+	MOBILE MENU START
+==========================================
+*/
+.mobile-menu-opener span{
+	font-size: 20px;
+	cursor: pointer;
+}
+.mobile-menu{
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 350px;
+	height: 100vh;
+	z-index: 100;
+	background: #fff;
+	padding: 40px 20px;
+}
+.mobile-menu .mMenu-close{
+	margin-bottom: 40px;
+}
+.mobile-menu .mMenu-close span{
+	font-size: 20px;
+	cursor: pointer;
+}
+.mobile-menu .m-menu ul li{
+	margin: 5px 0;
+}
+.mobile-menu .m-menu ul li a{
+	font-size: 15px;
+	font-weight: 400;
+	color: #777E91;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mobile-menu .m-menu ul li a.active{
+	color: #23262F;
+}
+
+.mobile-menu .m-menu .mynav-right{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0;
+	border-top: 1px solid #8888;
+	padding-top: 10px;
+}
+.mobile-menu .m-menu .mynav-right select{
+	border: none;
+	font-size: 15px;
+	font-weight: 400;
+	color: #23262F;
+	margin-right: 10px;
+}
+.mobile-menu .m-menu .mynav-right .mynav-btns a{
+	padding: 4px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	display: inline-block;
+	margin-left: 10px;
+}
+/*
+==========================================
+	MOBILE MENU END
+==========================================
+*/
+
+
+/*
+==========================================
+	HEADER SECTION START
+==========================================
+*/
+.header-section{
+	margin-left: 0%;
+	padding: 50px 50px;
+}
+.header-section .header-content{
+	margin-bottom: 50px;
+}
+
+/*
+==========================================
+	HEADER SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	GET IN TOUCH SECTION START
+==========================================
+*/
+
+.get-in-touch .get-touch-wrap .get-in-text h2{
+	font-size: 35px;
+}
+
+.get-in-touch .get-touch-wrap .get-in-text p{
+	font-size: 20px;
+}
+
+/*
+==========================================
+	GET IN TOUCH SECTION END
+==========================================
+*/
+
+/*
+==========================================
+	WALLET SECTION START
+==========================================
+*/
+.wallet-section{
+	margin-bottom: 200px;
+}
+
+.wallet-section .wallet-content img.phoneimg{
+	width: 200px;
+}
+
+
+.wallet-section .wallet-content .wallet-text h3{
+	font-size: 26px;
+}
+.wallet-section .wallet-content .wallet-text p{
+	font-size: 14px;
+
+}
+.wallet-section .wallet-content .wallet-text a{
+	font-size: 13px;
+}
+/*
+==========================================
+	WALLET SECTION END
+==========================================
+*/
+
+
+}
+
+@media screen and (max-width: 767px){
+.usd-Navbar img.nav-icon{
+	position: absolute;
+	left: 0;
+	top: 110px;
+	width: 110px;
+}
+.section-title h2{
+	font-size: 32px;
+}
+
+.team-card{
+	max-width: 95%;
+
+}
+
+
+/*
+==========================================
+	HEADER SECTION START
+==========================================
+*/
+.header-section{
+	padding-bottom: 0;
+}
+
+
+.header-section .header-content h1{
+	font-size: 30px;
+	line-height: 20px;
+}
+.header-section .header-content p{
+	font-size: 18px;
+}
+.header-section .header-content .header-btn{
+	margin: 20px 0;
+}
+
+
+/*
+==========================================
+	HEADER SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	CONTRACT SECTION START
+==========================================
+*/
+.contract-section{
+	margin: 0px 0;
+}
+
+.contract-section .smart-contract h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.contract-section .smart-contract .contract-partner-wrap{
+	margin: 00px 0;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner{
+	width: 160px;
+	margin: 20px 0;
+}
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img{
+	width: 130px;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img.wp-60{
+	width: 50px ;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img.wp-90{
+	width: 80px ;
+}
+
+/*
+==========================================
+	CONTRACT SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	WALLET SECTION START
+==========================================
+*/
+
+.wallet-section .wallet-content img.phoneimg{
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	width: 170px;
+}
+.wallet-section .wallet-content .wallet-text{
+	width: 60%;
+}
+
+/*
+==========================================
+	WALLET SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	GET IN TOUCH SECTION START
+==========================================
+*/
+.get-in-touch{
+	padding: 50px 0;
+	position: relative;
+	margin: 100px 0;
+	
+}
+.get-in-touch .get-in-container{
+	position: relative;
+}
+.get-in-touch .get-in-container img.get-coin{
+	width: 120px;
+	position: absolute;
+	left: -40px;
+	top: -30px;
+}
+.get-in-touch .get-touch-wrap{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 20px 50px;
+}
+.get-in-touch .get-touch-wrap .get-in-text{
+	padding-right: 20px;
+}
+.get-in-touch .get-touch-wrap .get-in-text h2{
+	font-size: 26px;
+	line-height: 1.5;
+}
+
+.get-in-touch .get-touch-wrap .get-in-text p{
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+/*
+==========================================
+	GET IN TOUCH SECTION END
+==========================================
+*/
+
+
+
+}
+
+@media screen and (max-width: 575px){
+.usd-Navbar img.nav-icon{
+	position: absolute;
+	left: 0;
+	top: 90px;
+	width: 100px;
+}
+.mobile-menu{
+	width: 100%;
+}
+
+.section-title{
+}
+.section-title h2{
+	text-align: center !important;
+	font-size: 22px;
+
+}
+.faq-section .container .section-title{
+	/* margin: 40px 0; */
+	background-image: url(../img/FAQ.png);
+	background-repeat: no-repeat;
+	/* font-size: 22px; */
+	background-position: center;
+	background-size: contain;
+	/* margin-left: 40%;
+	padding-top:-20%; */
+}
+
+.funds .take-detail{
+	width: 100%;
+}
+
+
+
+/*
+==========================================
+	HEADER SECTION START
+==========================================
+*/
+.header-section{
+	padding: 30px 15px;
+	text-align: center;
+}
+
+.header-section .header-content h1{
+
+	font-size: 22px;
+}
+.header-section .header-content p{
+	font-size: 18px;
+}
+
+
+/*
+==========================================
+	HEADER SECTION END
+==========================================
+*/
+
+/*
+==========================================
+	MULTI CHAIN START
+==========================================
+*/
+.multi-chain{
+	padding: 0 15px;
+	text-align: center;
+
+}
+
+.multi-chain .chain-card{
+	padding: 25px 20px;
+}
+
+/*
+==========================================
+	MULTI CHAIN END
+==========================================
+*/
+
+
+/*
+==========================================
+	CONTRACT SECTION START
+==========================================
+*/
+.contract-section{
+	margin: 10px 0;
+	text-align: center;
+
+}
+.contract-section .smart-contract{
+	padding: 10px 0px;
+	border-bottom: 1px solid #8888;
+}
+.contract-section .smart-contract:last-child{
+	border-bottom: none;
+}
+.contract-section .smart-contract h4{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.contract-section .smart-contract .contract-partner-wrap{
+	margin: 00px 0;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner{
+	width: 120px;
+	margin: 15px 0;
+}
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img{
+	width: 100px;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img.wp-60{
+	width: 40px ;
+}
+
+.contract-section .smart-contract .contract-partner-wrap .contract-partner img.wp-90{
+	width: 60px ;
+}
+
+/*
+==========================================
+	CONTRACT SECTION END
+==========================================
+*/
+
+/*
+==========================================
+	ABOUT SECTION START 
+==========================================
+*/
+.about-section{
+	padding: 40px 0;
+	margin: 10px 0;
+	text-align: center;
+
+}
+
+.about-section .section-title .section-title-btn a{
+	padding: 10px 40px;
+	border: 1px solid #0074FE;
+	/*color: #23262F;*/
+	font-size: 16px;
+	font-weight: 500;
+}
+.about-section .about-tabs{
+	margin: 20px 0;
+	margin-bottom: 50px;
+}
+.about-section .about-tabs ul li{
+	margin: 8px 5px;
+}
+.about-section .about-tabs ul li a{
+
+	font-size: 14px;
+}
+.about-section .about-tabs ul li a.active{
+	color: #fff;
+	background: #353945;
+}
+.about-content .about-h-text{
+	padding: 25px 0;
+}
+
+.about-content .about-h-text .about-h-heading h3{
+
+	font-size: 26px;
+}
+
+.about-content .about-h-text .about-h-heading a{
+	padding: 6px 20px;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+
+.about-content .about-h-text  p{
+	font-size: 14px;
+	line-height: 1.3;
+}
+.about-content .about-text{
+	margin-top: 30px;
+}
+.about-content .about-text h4{
+	font-size: 15px;
+	line-height: 1.3;
+}
+.about-content .about-text p{
+	font-size: 13px;
+}
+/*
+==========================================
+	ABOUT SECTION END 
+==========================================
+*/
+
+/*
+==========================================
+	WALLET SECTION START
+==========================================
+*/
+
+.wallet-section .wallet-content{
+	border-radius: 15px;
+	padding: 40px 20px;
+	background: #fff;
+	position: relative;
+	min-height: 550px;
+	text-align: center;
+
+
+}
+.wallet-section .wallet-content img.phoneimg{
+	position: absolute;
+	right: 80px;
+	top: 400px;
+	width: 160px;
+}
+.wallet-section .wallet-content .wallet-text{
+	width: 100%;
+}
+
+/*
+==========================================
+	WALLET SECTION END
+==========================================
+*/
+
+/*
+==========================================
+	FAQ SECTION START
+==========================================
+*/
+.faq-section{
+	margin: 10px 0;
+	text-align: center;
+
+}
+
+.faq-section .card .card-header button i{
+	font-size: 24px;
+	line-height: 1.5;
+}
+.faq-section .card .card-header button.collapsed i{
+	transform: rotate(0deg);
+	
+}
+.faq-section .card .card-header h5 button{
+	font-size: 13px;
+	line-height: 1.5;
+}
+.faq-section .card .faq-ans{
+	width: 95%;
+	border-radius: 10px;
+
+}
+
+.faq-section .card .faq-ans .card-body{
+	padding: 20px 20px;
+	padding-bottom: 10px;
+}
+.faq-section .card .faq-ans .card-body p{
+	font-size: 13px;
+
+}
+
+
+/*
+==========================================
+	FAQ SECTION END
+==========================================
+*/
+
+
+/*
+==========================================
+	Audited SECTION START
+==========================================
+*/
+.audited-section{
+	margin: 10px 0;
+	text-align: center;
+
+}
+
+.audited-section .card .card-header button i{
+	font-size: 24px;
+	line-height: 1.5;
+}
+.audited-section .card .card-header button.collapsed i{
+	transform: rotate(0deg);
+	
+}
+.audited-section .card .card-header h5 button{
+	font-size: 13px;
+	line-height: 1.5;
+}
+.audited-section .card .audited-ans{
+	width: 95%;
+	border-radius: 10px;
+
+}
+
+.audited-section .card .audited-ans .card-body{
+	padding: 20px 20px;
+	padding-bottom: 10px;
+}
+.audited-section .card .audited-ans .card-body p{
+	font-size: 13px;
+
+}
+
+
+/*
+==========================================
+	Audited SECTION END
+==========================================
+*/
+
+
+
+.multi-chain .chain-card p{
+	justify-content: center;
+
+}
+
+/*
+==========================================
+	GET IN TOUCH SECTION START
+==========================================
+*/
+.get-in-touch{
+	padding: 30px 0;
+	position: relative;
+	margin: 40px 0;
+	text-align: center;
+
+
+}
+.get-in-touch .get-in-container{
+	position: relative;
+}
+.get-in-touch .get-in-container img.get-coin{
+	width: 100px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	z-index: 10;
+}
+.get-in-touch .get-in-container > img.get-bg-img{
+	width: 120%;
+	transform: translateX(-20px);
+	height: 400px;
+}
+.get-in-touch .get-touch-wrap{
+	padding: 20px 10px;
+}
+.get-in-touch .get-touch-wrap .get-in-text{
+	padding-right: 0px;
+}
+.get-in-touch .get-touch-wrap .get-in-text h2{
+	font-size: 22px;
+}
+
+.get-in-touch .get-touch-wrap .get-in-text p{
+	font-size: 22px;
+}
+
+.get-in-touch-img img{
+	width: 150px;
+	text-align: center;
+}
+/*
+==========================================
+	GET IN TOUCH SECTION END
+==========================================
+*/
+
+/*
+==========================================
+	FOOTER SECTION START
+==========================================
+*/
+.footer p{
+	font-size: 14px;
+	text-align: center;
+}
+.footer .ft-contact{
+	margin: 20px 0;
+}
+.footer .ft-contact{
+	text-align: center;
+}
+.footer .ft-contact a{
+	font-size: 13px;
+	margin: 0 10px;
+}
+/*
+==========================================
+	FOOTER SECTION END
+==========================================
+*/
+
+
+
+}
