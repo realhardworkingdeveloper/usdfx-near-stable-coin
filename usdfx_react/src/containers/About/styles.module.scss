@@ -1,0 +1,97 @@
+.about {
+    background: url("../../assets/images/about/bg.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 50px 0;
+    margin-top: -100px;
+    padding:200px 12%;
+
+    font-family: 'DM Sans';
+
+    .buyToken a {
+        padding: 10px 40px;
+	    border: 1px solid #159B45;
+        font-size: 16px;
+	    font-weight: 500;
+    }
+
+    .tabs {
+        div {
+            margin: 8px 5px;
+
+            a {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #777E91;
+                padding: 5px 15px;
+                border-radius: 40px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.coin {
+    font-family: 'DM Sans';
+
+    .leftText {
+        padding: 25px 0;
+
+        .leftHeading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            h3 {            
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                color: #23262F;
+            }
+
+            a {
+                padding: 8px 30px;
+                border: 1px solid #0074FE;
+                font-size: 16px;
+                font-weight: 500;
+
+                i {
+                    margin-left: 10px;
+	                transition: 0.2s ease-out;
+                }
+            }
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            color: #777E91;
+        }
+    }
+
+    .aboutText {
+        font-family: 'Poppins';
+        font-style: normal;
+        h4 {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 27px;
+            color: #23262F;
+        }
+        p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            color: #777E91;
+        }
+    }
+}

@@ -1,22 +1,24 @@
-import './App.css';
+import './App.scss';
+import { Routes , Route } from 'react-router-dom';
+import routes from './Routes';
+import { Layout } from './containers';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        {
+          routes.map((route, index) => 
+            <Route
+              key={index}
+              exact={true}
+              path={route.path}
+              element={route.component}
+            />
+          )
+        }
+      </Routes>
+    </Layout>
   );
 }
 
