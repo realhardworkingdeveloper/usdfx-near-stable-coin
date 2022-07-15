@@ -1,0 +1,14 @@
+
+.team-card-team{
+	margin-top: 120px;
+	margin-bottom: 30px;
+}
+.team-card-team .team{
+	
+	padding: 0 15px;
+	position: relative;
+	background: rgba(255, 255, 255, 0.88);
+	border: 0.65143px solid #FFFFFF;
+	box-shadow: 9.12002px 5.327px 20.143px rgba(49, 89, 211, 0.12);
+	border-radius: 19.3856px;
+}
