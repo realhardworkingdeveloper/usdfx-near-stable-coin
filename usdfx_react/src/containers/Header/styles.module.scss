@@ -4,7 +4,11 @@
 	background: #FCFCFD;
 	padding: 4px 10px;
 	border-bottom: 1px solid #8888;
-	position: relative;
+	// position: relative;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999999;
 }
 
 .nav {

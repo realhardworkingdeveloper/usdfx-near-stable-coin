@@ -5,6 +5,9 @@ import { Tab, Nav } from 'react-bootstrap';
 import styles from './styles.module.scss';
 
 import { StableCoin } from './StableCoin';
+import { Team } from './Team';
+import { Tokenomics } from './Tokenomics';
+
 import { TabNav } from '../../components';
 
 export const About = () => {
@@ -56,7 +59,13 @@ export const About = () => {
                             <StableCoin />
                         </Tab.Pane>
                         <Tab.Pane eventKey="team">
-                            <div>Team</div>
+                            <Team />
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="tokenomics">
+                            <Tokenomics />
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="roadmap">
+                            <Team />
                         </Tab.Pane>
                     </Tab.Content>
                 </div>

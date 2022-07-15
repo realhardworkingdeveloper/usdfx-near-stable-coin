@@ -83,3 +83,9 @@ img {
   background: #0074FE;
   border: 1px solid #0074FE;
 }
+
+@media screen and (max-width: 767px){
+  .section-title h2{
+    font-size: 32px;
+  }
+}

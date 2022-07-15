@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 export const Audit = ({ image, url }) => {
     return (
         <div 
-            className="col-md-2 col-sm-3 d-flex align-items-stretch"
+            className="col-md-3 col-sm-4 d-flex align-items-stretch"
         >
             <div className={clsx(styles.card)}>
                 <a href={url}>

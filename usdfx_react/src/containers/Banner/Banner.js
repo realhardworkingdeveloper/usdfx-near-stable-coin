@@ -98,6 +98,7 @@ export const Banner = () => {
                                     <CoinCard
                                         {...coin}
                                         index={index}
+                                        key={index}
                                     />
                                 )
                             }

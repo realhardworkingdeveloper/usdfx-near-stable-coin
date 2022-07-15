@@ -4,3 +4,7 @@ export * from './Layout/Layout';
 export * from './Banner/Banner';
 export * from './KYC/KYC';
 export * from './About/About';
+export * from './Wallet/Wallet';
+export * from './FAQ/FAQ';
+export * from './Report/Report';
+export * from './Contact/Contact';

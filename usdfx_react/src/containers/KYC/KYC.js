@@ -49,8 +49,8 @@ export const KYC = () => {
             </h1>
             <div className="row align-items-center">
                 {
-                    audits.map((audit) => 
-                        <Audit {...audit} />
+                    audits.map((audit, index) => 
+                        <Audit {...audit} key={index} />
                     )
                 }
             </div>
@@ -61,8 +61,8 @@ export const KYC = () => {
             </h1>
             <div className="row align-items-center">
                 {
-                    partners.map((audit) => 
-                        <Audit {...audit} />
+                    partners.map((audit, index) => 
+                        <Audit {...audit} key={index} />
                     )
                 }
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Banner, KYC, About } from '../../containers';
+import { Banner, KYC, About, Wallet, FAQ, Report, Contact } from '../../containers';
 
 const Home = () => {
 
@@ -9,6 +9,10 @@ const Home = () => {
             <Banner />
             <KYC />
             <About />
+            <Wallet />
+            <FAQ />
+            <Report />
+            <Contact />
         </>
     );
 }
