@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Banner, KYC, About, Wallet, FAQ, Report, Contact } from '../../containers';
 
-const Home = () => {
 
+const Home = () => {
     return (
         <>
             <Banner />
-            <KYC />
+            {/* <KYC /> */}
             <About />
             <Wallet />
-            <FAQ />
-            <Report />
+            {/* <FAQ /> */}
+            {/* <Report /> */}
             <Contact />
         </>
     );

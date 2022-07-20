@@ -15,17 +15,17 @@ export const Footer = () => {
             <p className="text-center">
                 © USDFX Token 2022.
             </p>
-            <div className="row">
+            <p className="text-center">Omara Payment Service Provider License Number : 977524  </p>	
+            <div className="row" style={{paddingTop: 50}}>
                 <div className="col-lg-3 col-sm-6 my-3">
                     <Link to="/">
                         <img
                             src={Location}
                             alt=""
                         />
-                        <span>325 Manchester Road</span>
+                        <span>2608 Tameem House Barsha Heights Tecom</span>
                     </Link>
                 </div>
-
 
                 <div className="col-lg-3 col-sm-6  my-3">
                     <Link to="/">
@@ -33,7 +33,7 @@ export const Footer = () => {
                             src={Phone}
                             alt=""
                         />
-                        <span>+1-202-555-0109</span>
+                        <span>+0971507580689</span>
                     </Link>
                 </div>
 
@@ -43,7 +43,7 @@ export const Footer = () => {
                             src={Clock}
                             alt=""
                         />
-                        <span>9 - 12, Mon - Tue</span>
+                        <span>9am - 10pm, Mon - Sat</span>
                     </Link>
                 </div>
 
@@ -53,7 +53,8 @@ export const Footer = () => {
                             src={Email}
                             alt=""
                         />
-                        <span>Hellokraft8@gmail.com</span>
+                        <span>support@omarapay.com</span>
+                        <div  className="text-right">corporate@ammarzayacapital.com</div>
                     </a>
                 </div>
             </div>

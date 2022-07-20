@@ -51,10 +51,10 @@ export const FAQ = () => {
     });
 
     return (
-        <section class={styles.faq}>
-            <div class="container">
+        <section className={styles.faq}>
+            <div className="container">
                 <div className={clsx(styles.title, 'section-title')}>
-                    <h2 class="text-center">FAQ</h2>
+                    <h2 className="text-center">FAQ</h2>
                 </div>
                 {renderedQuestionsAnswers}
             </div>

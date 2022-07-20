@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import styles from './styles.module.scss';
 
-export const CoinCard = ({ image, text, url, index }) => {
+export const CoinCard = ({ image, text, url, index, effect, inline = false }) => {
     const colors = [
         styles.color0,
         styles.color1,
@@ -15,9 +15,9 @@ export const CoinCard = ({ image, text, url, index }) => {
 
     return (
         <div 
-            className="col-md-4 col-sm-6 p-2 my-1 d-flex align-items-stretch"
+            className={inline ? "col-lg-2 col-md-4 col-sm-6 p-2 my-1 d-flex align-items-stretch" : "col-md-4 col-sm-6 p-2 my-1 d-flex align-items-stretch"}
         >
-            <div className={clsx(styles.card, colors[index])}>
+            <div className={clsx(styles.card, colors[index])} data-aos={effect}>
                 <img
                     src={image}
                     alt=""

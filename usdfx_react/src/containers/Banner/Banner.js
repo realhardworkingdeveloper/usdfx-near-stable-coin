@@ -21,31 +21,37 @@ export const Banner = () => {
             image: Near,
             text: 'Near Protocol',
             url: "/",
+            effect: "fade-down-right"
         },
         {
             image: Polygon,
             text: 'Polygon',
             url: "/",
+            effect: "fade-down"
         },
         {
             image: Ethereum,
             text: 'Ethereum',
             url: "/",
+            effect: "fade-up-left"
         },
         {
             image: BSC,
             text: 'Binance Smartchain',
             url: "/",
+            effect: "fade-up"
         },
         {
             image: Tron,
             text: 'Tron',
             url: "/",
+            effect: "fade-up-left"
         },
         {
             image: Stellar,
             text: 'Stellar',
             url: "/",
+            effect: "fade-down-right"
         }
     ];
 
@@ -54,13 +60,13 @@ export const Banner = () => {
             <div className="row align-items-center">
                 <div className="col-lg-4 ">
                     <div className={styles.bannerContent}>
-                        <h1>
-                            <span>USDFX</span> Token
+                        <h1 data-aos="fade-up-right" >
+                            <span>USDFX</span> Stable Coin
                         </h1>
-                        <p>
+                        <p data-aos="fade-down-right">
                             Revolutionizing Fintech & Web3 To Facilitate B2B Payments
                         </p>
-                        <div className={styles.button}>
+                        <div className={styles.button} data-aos="fade-up-right">
                             <Link
                                 to="/"
                                 className="btn-fill"
@@ -76,7 +82,7 @@ export const Banner = () => {
                         </Link>
                     </div>
                 </div>
-                <div className={clsx(styles.bannerImg, "col-lg-8")}>
+                <div className={clsx(styles.bannerImg, "col-lg-8")} data-aos="fade-up-left">
 					<img
                         src={Swap}
                         width="100%"
@@ -86,7 +92,7 @@ export const Banner = () => {
             </div>
 
             <section className={styles.multichain}>
-                <div className="section-title">
+                <div className="section-title" data-aos="fade-down-right">
 					<h2>USDFX in Multi Chain</h2>
 				</div>
 
@@ -104,7 +110,7 @@ export const Banner = () => {
                             }
                         </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5" data-aos="fade-left">
 						<img
                             src={Coins}
                             width="100%"

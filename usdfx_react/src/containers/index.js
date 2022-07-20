@@ -8,3 +8,5 @@ export * from './Wallet/Wallet';
 export * from './FAQ/FAQ';
 export * from './Report/Report';
 export * from './Contact/Contact';
+export * from './BuyToken/BuyToken';
+export * from './ConnectModal/ConnectModal';

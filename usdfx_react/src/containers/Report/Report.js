@@ -51,10 +51,10 @@ export const Report = () => {
     });
 
     return (
-        <section class={styles.report}>
-            <div class="container">
+        <section className={styles.report}>
+            <div className="container">
                 <div className={clsx(styles.title, 'section-title')}>
-                    <h2 class="text-center">Audited Report</h2>
+                    <h2 className="text-center">Audited Report</h2>
                 </div>
                 {renderedReports}
             </div>
