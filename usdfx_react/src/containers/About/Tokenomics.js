@@ -62,10 +62,10 @@ export const Tokenomics = () => {
                             <img src={Left} width="100%" alt="" />
                         </div>
 
-                        <div className={styles.content}>
+                        {/* <div className={styles.content}>
                             <h4>Collateralized loan against commodities</h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
@@ -119,10 +119,10 @@ export const Tokenomics = () => {
                             <img src={Right} width="100%" alt="" />
                         </div>
 
-                        <div className={styles.content}>
+                        {/* <div className={styles.content}>
                             <h4>Collateralized loan against commodities</h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
