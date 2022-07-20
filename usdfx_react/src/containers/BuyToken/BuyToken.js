@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { WalletContext } from '../../providers';
 
 import { Link } from 'react-router-dom';
 
@@ -8,12 +9,36 @@ import styles from './styles.module.scss';
 
 import { Multichain } from '../Multichain/Multichain';
 
-import MetaMask from '../../assets/images/tokensale/metamask.png';
+import Metamask from '../../assets/images/tokensale/metamask.png'
+import Walletconnet from '../../assets/images/tokensale/walletconnet.png'
+import Trustwallet from '../../assets/images/tokensale/trustwallet.png'
+import Tronlink from '../../assets/images/tokensale/tronlink.png'
+import Near from '../../assets/images/tokensale/near.png'
+import Senders from '../../assets/images/tokensale/senders.png'
+
 import Card from '../../assets/images/tokensale/card.png';
 import USDT from '../../assets/images/tokensale/usdt.png';
 import USDFX from '../../assets/images/tokensale/usdfx.png';
 
-export const BuyToken = ({ connect }) => {
+const wallets = [Metamask, Walletconnet, Trustwallet, Tronlink, Near, Senders];
+
+export const BuyToken = ({ showModal }) => {
+    const { connected, signOut, swap, usdtBalance, usdfxBalance, lockedAmount, availableAmount, distributionAmount, distributionTimestamp } = useContext(WalletContext);
+
+    console.log(usdtBalance, usdfxBalance);
+
+    const [swapAmount, setSwapAmount] = useState(0);
+    const [usdfxAmount, setUSDFXAmount] = useState(0);
+
+    const Wallet = connected ? wallets[+localStorage.getItem('usdfx_wallet')] : wallets[0];
+
+    const isWalletConnected =+localStorage.getItem('usdfx_wallet') >= 10 ? false : true;
+
+    useEffect(() => {
+        let usdfx_amount = swapAmount / 75 * 120;
+        setUSDFXAmount(usdfx_amount);
+    }, [swapAmount]);
+
     return (
         <section className={styles.buyToken}>
             <div className="container">
@@ -36,11 +61,10 @@ export const BuyToken = ({ connect }) => {
                                 <div className={styles.buyButton} data-aos="fade-down-right">
                                     <Link
                                         to="#"
-                                        className="btn-fill"
                                         className="btn-fill-green"
-                                        onClick={connect}
+                                        onClick={connected ? signOut : showModal}
                                     >
-                                        Connect wallet
+                                        {connected ? "Disconnect wallet": "Connect wallet"}
                                     </Link>
                                 </div>
                                 <div className={styles.createButton} data-aos="fade-up-left">
@@ -66,14 +90,20 @@ export const BuyToken = ({ connect }) => {
                                     </div>
                                 </div>
                                 <div className='col-6'>
-                                    <div className={clsx(styles.connectButton, "btn-fill")} onClick={connect}>
-                                        <span>Connect wallet</span>
-                                        <img className={styles.wallet} src={MetaMask} alt="" />
-                                    </div>
-                                    <div className={clsx(styles.connectButton, "btn-fill-green")} onClick={connect}>
-                                            <span>Card payment</span>
-                                            <img className={styles.card} src={Card} alt="" />
-                                    </div>
+                                    {
+                                        !(connected && !isWalletConnected) && 
+                                        <div className={clsx(styles.connectButton, "btn-fill")} onClick={connected ? signOut : showModal}>
+                                            <span>{connected ? "Disconnect wallet": "Connect wallet"}</span>
+                                            <img className={styles.wallet} src={Wallet} alt="" />
+                                        </div>
+                                    }
+                                    {
+                                        !(connected && isWalletConnected) && 
+                                        <div className={clsx(styles.connectButton, "btn-fill-green")} onClick={showModal}>
+                                                <span>Card payment</span>
+                                                <img className={styles.card} src={Card} alt="" />
+                                        </div>
+                                    }
                                 </div>
 
                                 <div className='col-12'>
@@ -91,7 +121,7 @@ export const BuyToken = ({ connect }) => {
                                         Available Balance:
                                     </p>
                                     <h4>
-                                        1000 USDT
+                                        {usdtBalance} USDT
                                     </h4>
                                 </div>
                                 <div className='col-12'>
@@ -102,8 +132,15 @@ export const BuyToken = ({ connect }) => {
                                                     Convert:
                                                 </p>
                                                 <div className={clsx(styles.input, 'd-flex')}>
-                                                    <label for="send">$</label>
-                                                    <input id="send" type='number' placeholder='1,000' />
+                                                    <label htmlFor="send">$</label>
+                                                    <input
+                                                        id="send"
+                                                        type='number'
+                                                        placeholder='0'
+                                                        onChange={(e) => { 
+                                                            setSwapAmount(Number.parseFloat(e.target.value))
+                                                        }}
+                                                    />
                                                 </div>
                                             </div>
                                             <div className={clsx(styles.right, 'col-5 d-flex align-items-center justify-content-around')}>
@@ -116,10 +153,10 @@ export const BuyToken = ({ connect }) => {
                                 </div>
                                 <div className='offset-5 col-7 d-flex justify-content-around'>
                                     <p>
-                                        Available Balance:
+                                        Your USDFX Balance:
                                     </p>
                                     <h4>
-                                        1000 USDT
+                                        {usdfxBalance} USDFX
                                     </h4>
                                 </div>
                                 <div className='col-12'>
@@ -130,8 +167,13 @@ export const BuyToken = ({ connect }) => {
                                                     Receive:
                                                 </p>
                                                 <div className={clsx(styles.input, 'd-flex')}>
-                                                    <label for="send">$</label>
-                                                    <input id="send" type='number' placeholder='1,000' disabled={true} />
+                                                    <label htmlFor="send">$</label>
+                                                    <input
+                                                        id="send"
+                                                        type='number'
+                                                        placeholder='0'
+                                                        disabled={true}
+                                                    />
                                                 </div>
                                             </div>
                                             <div className={clsx(styles.right, 'col-5 d-flex align-items-center justify-content-around')}>
@@ -149,33 +191,48 @@ export const BuyToken = ({ connect }) => {
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Total Subscription Term:
+                                        <span>Total Subscription Term:</span>
+                                        <span>12 Months</span>
                                     </p>
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Exchange Rate:
+                                        <span>Exchange Rate:</span>
+                                        <span>0.85 USDT</span>
                                     </p>
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Total Locked Amount: 
+                                        <span>Total Locked Amount: </span>
+                                        <span>{lockedAmount} USDFX</span>
                                     </p>
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Token Distribution Date : 
+                                        <span>Token Distribution Date : </span>
+                                        <span>{distributionTimestamp > 0 ? (new Date(distributionTimestamp)).toLocaleString() : ''}</span>
                                     </p>
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Next Distribution Date :
+                                        <span>Next Distribution Amount :</span>
+                                        <span>{distributionAmount} USDFX</span>
                                     </p>
                                 </div>
                                 <div className='col-12'>
                                     <p className={styles.info}>
-                                        Total Redeemable Amount :
+                                        <span>Total Redeemable Amount :</span>
+                                        <span>{availableAmount} USDFX</span>
                                     </p>
+                                </div>
+                                <div className='col-12 text-center'>
+                                    <button
+                                        className={clsx(styles.confirm, "btn-fill-green")}
+                                        disabled={!(swapAmount > 0 && swapAmount <= usdtBalance) }
+                                        onClick={() => swap(swapAmount)}
+                                    >
+                                        Confirm Swap
+                                    </button>
                                 </div>
                             </div>
                         </div>

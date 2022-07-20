@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
+import { WalletContext } from '../../providers';
 import { Wallet } from '../../components';
 
 import './styles.scss';
@@ -37,14 +38,15 @@ const wallets = [
 
 const cards = [
     {
-        img: Paypal, label: "Credit Card", type: 6
+        img: Paypal, label: "Credit Card", type: 10
     },
     {
-        img: Others, label: "Add Bank", type: 7
+        img: Others, label: "Add Bank", type: 11
     }
 ];
 
 export const ConnectModal = ({ show, setShow }) => {
+    const { signIn, signOut } = useContext(WalletContext);
 
     return (
         <Modal
@@ -59,7 +61,7 @@ export const ConnectModal = ({ show, setShow }) => {
                 <div className="row">
                     {
                         wallets.map((wallet, index) => 
-                            <Wallet {...wallet} key={index} />
+                            <Wallet {...wallet} key={index} signIn={() => signIn(wallet.type)} />
                         )
                     }
                 </div>
@@ -67,7 +69,7 @@ export const ConnectModal = ({ show, setShow }) => {
                 <div className="row justify-content-center">
                     {
                         cards.map((card, index) => 
-                            <Wallet {...card} key={index} />
+                            <Wallet {...card} key={index} signIn={() => signIn(card.type)} />
                         )
                     }
                 </div>
