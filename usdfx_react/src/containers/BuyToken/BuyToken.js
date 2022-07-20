@@ -36,6 +36,7 @@ export const BuyToken = ({ showModal }) => {
 
     useEffect(() => {
         let usdfx_amount = swapAmount / 75 * 120;
+
         setUSDFXAmount(usdfx_amount);
     }, [swapAmount]);
 
@@ -138,7 +139,7 @@ export const BuyToken = ({ showModal }) => {
                                                         type='number'
                                                         placeholder='0'
                                                         onChange={(e) => { 
-                                                            setSwapAmount(Number.parseFloat(e.target.value))
+                                                            setSwapAmount(+e.target.value)
                                                         }}
                                                     />
                                                 </div>
@@ -171,7 +172,7 @@ export const BuyToken = ({ showModal }) => {
                                                     <input
                                                         id="send"
                                                         type='number'
-                                                        placeholder='0'
+                                                        placeholder={usdfxAmount}
                                                         disabled={true}
                                                     />
                                                 </div>
