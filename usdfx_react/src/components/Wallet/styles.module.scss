@@ -13,5 +13,24 @@
         font-size: 16px;
         font-weight: 500;
         text-align: center;
+        margin: 0;
     }
+
+    span {
+        font-family: 'Poppins';
+        font-size: 8px;
+        font-weight: 500;
+    }
+
+    .active {
+        color: #4fc47a;
+    }
+
+    .comingsoon {
+        color: #d64256;
+    }
+}
+
+.disabled {
+    cursor: not-allowed !important;
 }

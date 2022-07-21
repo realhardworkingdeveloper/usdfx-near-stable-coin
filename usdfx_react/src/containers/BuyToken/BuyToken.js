@@ -25,8 +25,6 @@ const wallets = [Metamask, Walletconnet, Trustwallet, Tronlink, Near, Senders];
 export const BuyToken = ({ showModal }) => {
     const { connected, signOut, swap, usdtBalance, usdfxBalance, lockedAmount, availableAmount, distributionAmount, distributionTimestamp } = useContext(WalletContext);
 
-    console.log(usdtBalance, usdfxBalance);
-
     const [swapAmount, setSwapAmount] = useState(0);
     const [usdfxAmount, setUSDFXAmount] = useState(0);
 
@@ -68,14 +66,14 @@ export const BuyToken = ({ showModal }) => {
                                         {connected ? "Disconnect wallet": "Connect wallet"}
                                     </Link>
                                 </div>
-                                <div className={styles.createButton} data-aos="fade-up-left">
+                                {/* <div className={styles.createButton} data-aos="fade-up-left">
                                     <Link
                                         to="/"
                                         className="btn-fill"
                                     >
                                         Create Account
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

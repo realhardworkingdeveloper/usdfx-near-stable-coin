@@ -68,10 +68,10 @@ export const Banner = () => {
                         </p>
                         <div className={styles.button} data-aos="fade-up-right">
                             <Link
-                                to="/"
+                                to="/tokensale"
                                 className="btn-fill"
                             >
-                                Get Started Now
+                                Buy Token
                             </Link>
                         </div>
                         <Link

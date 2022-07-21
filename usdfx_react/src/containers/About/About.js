@@ -18,21 +18,21 @@ export const About = () => {
 
     const tabs = [
         {
-            event: 'coin', text: 'Stable Coin', effect: "fade-up-left"
+            event: 'coin', text: 'Stable Coin'
         },
         {
-            event: 'team', text: 'Team', effect: "fade-left"
+            event: 'team', text: 'Team'
         },
         {
-            event: 'tokenomics', text: 'Tokenomics', effect: "fade-right"
+            event: 'tokenomics', text: 'Tokenomics'
         },
         {
-            event: 'roadmap', text: 'Roadmap', effect: "fade-down-right"
+            event: 'roadmap', text: 'Roadmap'
         }
     ];
 
     return (
-        <section className={styles.about}>
+        <section id="about" className={styles.about}>
             <div className="section-title">
                 <div className="d-flex flex-column flex-sm-row flex-wrap align-items-center justify-content-center justify-content-sm-between">
                     <h2 data-aos="fade-up-right">About USDFX</h2>
@@ -44,7 +44,7 @@ export const About = () => {
             <Tab.Container
                 defaultActiveKey="coin"
             >
-                <Nav className={styles.tabs}>
+                <Nav className={styles.tabs} data-aos="fade-up-left">
                     {
                         tabs.map((tab, index) => 
                             <TabNav

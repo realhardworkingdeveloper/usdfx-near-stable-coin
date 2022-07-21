@@ -17,31 +17,28 @@ import Others from '../../assets/images/connect/others.png';
 
 const wallets = [
     {
-        img: MetaMask, label: "Metamask", type: 0
+        img: MetaMask, label: "Metamask", type: 0, active: false
     },
     {
-        img: Walletconnect, label: "Walletconnect", type: 1
+        img: Walletconnect, label: "Walletconnect", type: 1, active: false
     },
     {
-        img: TrustWallet, label: "Trust Wallet", type: 2
+        img: TrustWallet, label: "Trust Wallet", type: 2, active: false
     },
     {
-        img: Tronlink, label: "Tron link", type: 3
+        img: Tronlink, label: "Tron link", type: 3, active: false
     },
     {
-        img: Near, label: "Near wallet", type: 4
-    },
-    {
-        img: Senders, label: "Senders wallet", type: 5
+        img: Near, label: "Near wallet", type: 4, active: true
     }
 ];
 
 const cards = [
     {
-        img: Paypal, label: "Credit Card", type: 10
+        img: Paypal, label: "Credit Card", type: 10, active: false
     },
     {
-        img: Others, label: "Add Bank", type: 11
+        img: Others, label: "Add Bank", type: 11, active: false
     }
 ];
 

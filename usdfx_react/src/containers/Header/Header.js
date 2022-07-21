@@ -41,13 +41,16 @@ export const Header = () => {
                                     <Link to='/'>Home</Link>
                                 </li>
                                 <li>
-                                    <Link to='/'>About</Link>
+                                    <Link to='/#about'>About</Link>
                                 </li>
                                 <li>
-                                    <Link to='/'>Tokenomics</Link>
+                                    <Link to='/#about'>Tokenomics</Link>
                                 </li>
                                 <li>
-                                    <Link to='/'>Partnership</Link>
+                                    <Link to='/#'>Partnership</Link>
+                                </li>
+                                <li>
+                                    <Link to='/tokensale'>Swap</Link>
                                 </li>
                                 {/* <NavDropdown
                                     className={styles.dropdown}
@@ -77,18 +80,19 @@ export const Header = () => {
                                     defaultValue={{ value: 'usd', label: 'USD' }}
                                 /> */}
 
-                                <Link
-                                    to='/'
+                                <a
+                                    href='https://launchpad.usdfx.org'
                                     className="btn-fill"
+                                    target='_blank'
                                 >
                                     Launchpad
-                                </Link>
+                                </a>
 
                                 <Link
-                                    to='/'
+                                    to='/tokensale'
                                     className="btn-unfill"
                                 >
-                                    Sign in
+                                    Buy Token
                                 </Link>
                             </div>
                         </div>
@@ -104,16 +108,17 @@ export const Header = () => {
                 </div>
                 <div className={styles.mobileMenu}>
                     <ul className="navbar-nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="">Tokenomics</a></li>
-                            <li><a href="">Partnership</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/#about">About</Link></li>
+                        <li><Link to="/#about">Tokenomics</Link></li>
+                        <li><Link to="#">Partnership</Link></li>
+                        <li><Link to="/tokensale">Swap</Link></li>
                     </ul>
 
                     <div className={styles.mobileRightNav}>
                         <div className="mynav-btns">
-                            <a href="" className="btn-fill">Launchpad</a>
-                            <a href="" className="btn-unfill">Sign in</a>
+                            <a href="https://launchpad.usdfx.org" target='_blank' className="btn-fill">Launchpad</a>
+                            <Link to="/tokensale" className="btn-unfill">Buy Token</Link>
                         </div>
                     </div>
                 </div>

@@ -24,8 +24,6 @@ export const WalletProvider = ({ children }) => {
     const [distributionAmount, setDistributionAmount] = useState(0);
     const [distributionTimestamp, setDistributionTimestamp] = useState(0);
 
-    console.log(usdtBalance);
-
     useEffect(() => {
         const type = +localStorage.getItem('usdfx_wallet');
 
