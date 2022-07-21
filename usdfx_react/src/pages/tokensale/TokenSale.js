@@ -14,8 +14,6 @@ const TokenSale = () => {
 
     const navigate = useNavigate();
 
-    console.log(transactionHash);
-
     useEffect(() => {
         if(transactionHash) {
             setShowTransationModal(true);
