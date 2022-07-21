@@ -14,12 +14,12 @@ export const TeamCard = ({ img, name, linkedin, website, position, description }
                 <div className={styles.heading}>
                     <h2>{name}</h2>
                     <div className="team-socail">
-                        <a href={linkedin} className="mr-2">
+                        <a href={linkedin} target="_blank" className="mr-2">
                             <i className="fa fa-linkedin-square"></i>
                         </a>
-                        <a href={website}>
+                        {/* <a href={website}>
                             <i className="fa fa-globe"></i>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 

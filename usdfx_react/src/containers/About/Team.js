@@ -59,7 +59,7 @@ export const Team = () => {
                 viewAll ? (
                     <section>
                         <div className="section-title pb-4">
-                            <h2>Our Team</h2>
+                            <h2>Founding Team</h2>
                         </div>
                         <div className="row align-items-start">
                             {
@@ -69,22 +69,22 @@ export const Team = () => {
                             }
                         </div>
                         <div className="section-title pb-4">
-                            <h2>Our Advisor</h2>
+                            <h2>Core Team</h2>
                         </div>
                         <div className="row align-items-start">
                             {
-                                advisors.map((founder, index) => [
-                                    <TeamCard key={index} {...founder} />
+                                advisors.map((advisor, index) => [
+                                    <TeamCard key={index} {...advisor} />
                                 ])
                             }
                         </div>
                         <div className="section-title pb-4">
-                            <h2>Operations</h2>
+                            <h2>Team</h2>
                         </div>
                         <div className="row align-items-start">
                             {
-                                operations.map((founder, index) => [
-                                    <TeamCard key={index} {...founder} />
+                                operations.map((operation, index) => [
+                                    <TeamCard key={index} {...operation} />
                                 ])
                             }
                         </div>
