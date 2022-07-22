@@ -30,6 +30,9 @@ const wallets = [
     },
     {
         img: Near, label: "Near wallet", type: 4, active: true
+    },
+    {
+        img: Senders, label: "Senders", type: 5, active: false
     }
 ];
 
